@@ -55,7 +55,7 @@ export function Hero() {
       tagBg: "#fffbeb",
       tagColor: "#92400e",
       headerImg: "/image/birthday.png",
-      title: "Sara's 30th",
+      title: "Sara's 4th",
       subtitle: "Join us for a night to remember!",
       date: "Sat, Aug 2, 2026",
       time: "7:00 PM – 11:30 PM",
@@ -157,10 +157,10 @@ export function Hero() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-r from-blue-100/20 to-purple-100/20 rounded-full blur-3xl"></div>
       </div>
 
-      <div className="container mx-auto px-4 py-12 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
-          <div className="space-y-6">
+          <div className="space-y-6 flex flex-col items-start text-left">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full border border-blue-200">
               <Sparkles className="w-4 h-4 text-blue-600" />
               <span className="text-blue-700 font-medium">InvitedU a Smart Event Management Platform</span>
