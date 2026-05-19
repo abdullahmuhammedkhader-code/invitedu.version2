@@ -1,4 +1,4 @@
-import { MessageCircle, Sparkles } from 'lucide-react';
+import { MessageCircle, Sparkles,Phone } from 'lucide-react';
 import { useState, useEffect, useRef } from "react";
 
 export function Hero() {
@@ -55,7 +55,7 @@ export function Hero() {
       tagBg: "#fffbeb",
       tagColor: "#92400e",
       headerImg: "/image/birthday.png",
-      title: "Sara's 5th",
+      title: "Sara's 30th",
       subtitle: "Join us for a night to remember!",
       date: "Sat, Aug 2, 2026",
       time: "7:00 PM – 11:30 PM",
@@ -178,21 +178,26 @@ export function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              
-                href="https://wa.me/918137051103?text=Hi! I'd like to create a digital invitation for my event"
-                className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all shadow-lg hover:shadow-xl"
-              <a>
-                <MessageCircle className="w-5 h-5" />
-                <span>Get Started on WhatsApp</span>
-              </a>
+      {/* WhatsApp Button */}
+      <a
+        href="https://wa.me/918137051103?text=Hi! I'd like to create a digital invitation for my event"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all shadow-lg hover:shadow-xl font-semibold"
+      >
+        <MessageCircle className="w-5 h-5" />
+        <span>Get Started on WhatsApp</span>
+      </a>
 
-              
-                href="tel:+918714976075"
-                className="inline-flex items-center justify-center px-8 py-4 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition-all"
-              <a>
-                Call Us Now
-              </a>
-            </div>
+      {/* Phone Call Button */}
+      <a
+        href="tel:+918714976075"
+        className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition-all font-semibold"
+      >
+        <Phone className="w-4 h-4" />
+        <span>Call Us Now</span>
+      </a>
+    </div>
 
             <div className="flex flex-wrap items-center gap-6 pt-2">
               <div className="flex items-center gap-2 text-sm text-gray-600">
