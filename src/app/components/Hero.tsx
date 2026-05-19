@@ -1,5 +1,5 @@
 import { MessageCircle, Sparkles } from 'lucide-react';
-import coverimg from '/image/2.png'
+
 export function Hero() {
   return (
     <section className="relative min-h-[90vh] flex items-center bg-gradient-to-br from-blue-50 via-white to-purple-50 overflow-hidden">
@@ -64,70 +64,120 @@ export function Hero() {
           <div className="relative">
             <div className="relative mx-auto max-w-sm">
               {/* Phone Frame */}
-              <div className="relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-[3rem] p-3 shadow-2xl">
-                <div className="bg-white rounded-[2.5rem] overflow-hidden">
-                  {/* Phone Content */}
-                  <div className="relative h-[600px] bg-gradient-to-br from-blue-50 to-purple-50">
-                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white/80"></div>
-                    <img
-                      src="/image/2.png"
-                      alt="Corporate Event"
-                      className="w-full h-35 object-cover"
-                    />
+              <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-[3rem] p-[3px] shadow-2xl">
+                {/* Side buttons */}
+                <div className="absolute -left-[3px] top-[80px] w-[3px] h-8 bg-gray-700 rounded-l-sm"></div>
+                <div className="absolute -left-[3px] top-[124px] w-[3px] h-12 bg-gray-700 rounded-l-sm"></div>
+                <div className="absolute -left-[3px] top-[184px] w-[3px] h-12 bg-gray-700 rounded-l-sm"></div>
+                <div className="absolute -right-[3px] top-[120px] w-[3px] h-16 bg-gray-700 rounded-r-sm"></div>
 
-                    <div className="relative p-6 space-y-4">
-                      <div className="text-center space-y-2">
-                        <div className="inline-block px-3 py-1 bg-blue-100 rounded-full text-xs font-medium text-blue-700 mb-2">
-                          Wedding Event
-                        </div>
-                        <h3 className="text-2xl text-gray-900 font-semibold">Bride & Groom</h3>
-                        <p className="text-gray-600">You're invited to our celebration</p>
+                {/* Inner bezel */}
+                <div className="bg-black rounded-[2.9rem] p-[2px]">
+                  <div className="bg-white rounded-[2.7rem] overflow-hidden">
+
+                    {/* Status Bar */}
+                    <div className="relative bg-white px-6 pt-3 pb-1 flex items-center justify-between z-10">
+                      {/* Dynamic Island / Notch */}
+                      <div className="absolute top-2 left-1/2 -translate-x-1/2 w-28 h-7 bg-black rounded-full z-20 flex items-center justify-center gap-2">
+                        <div className="w-2 h-2 rounded-full bg-gray-800 border border-gray-600"></div>
+                        <div className="w-3 h-3 rounded-full bg-gray-900 border border-gray-700"></div>
                       </div>
 
-                      <div className="bg-white rounded-xl p-4 space-y-3 shadow-lg border border-gray-100">
-                        <div className="flex items-start gap-3">
-                          <div className="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0">
-                            <span className="text-blue-600">📅</span>
-                          </div>
-                          <div>
-                            <p className="font-medium text-gray-900">Friday, June 15, 2026</p>
-                            <p className="text-sm text-gray-600">6:00 PM - 10:00 PM</p>
-                          </div>
+                      {/* Time */}
+                      <span className="text-[13px] font-semibold text-gray-900 tabular-nums">9:41</span>
+
+                      {/* Right icons */}
+                      <div className="flex items-center gap-[5px]">
+                        {/* Signal bars */}
+                        <div className="flex items-end gap-[2px] h-[13px]">
+                          <div className="w-[3px] h-[4px] bg-gray-900 rounded-sm"></div>
+                          <div className="w-[3px] h-[6px] bg-gray-900 rounded-sm"></div>
+                          <div className="w-[3px] h-[9px] bg-gray-900 rounded-sm"></div>
+                          <div className="w-[3px] h-[12px] bg-gray-900 rounded-sm"></div>
                         </div>
 
-                        <div className="flex items-start gap-3">
-                          <div className="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0">
-                            <span className="text-blue-600">📍</span>
+                        {/* WiFi */}
+                        <svg width="16" height="13" viewBox="0 0 16 13" fill="none">
+                          <path d="M8 10.5C8.828 10.5 9.5 11.172 9.5 12S8.828 13.5 8 13.5 6.5 12.828 6.5 12 7.172 10.5 8 10.5z" fill="#1a1a1a" />
+                          <path d="M4.93 7.93A4.48 4.48 0 018 6.75c1.18 0 2.25.45 3.07 1.18" stroke="#1a1a1a" strokeWidth="1.5" strokeLinecap="round" fill="none" />
+                          <path d="M2.34 5.34A7.47 7.47 0 018 3c2.07 0 3.95.84 5.31 2.2" stroke="#1a1a1a" strokeWidth="1.5" strokeLinecap="round" fill="none" />
+                          <path d="M0 2.93A10.46 10.46 0 018 0c2.9 0 5.53 1.18 7.43 3.08" stroke="#1a1a1a" strokeWidth="1.5" strokeLinecap="round" fill="none" />
+                        </svg>
+
+                        {/* Battery */}
+                        <div className="flex items-center gap-[1px]">
+                          <div className="relative w-[22px] h-[11px] border-[1.5px] border-gray-900 rounded-[3px] flex items-center px-[1.5px]">
+                            <div className="w-[14px] h-[7px] bg-green-500 rounded-[1.5px]"></div>
                           </div>
-                          <div>
-                            <p className="font-medium text-gray-900">Grand Ballroom</p>
-                            <p className="text-sm text-gray-600">Downtown Convention Center</p>
-                          </div>
+                          <div className="w-[1.5px] h-[5px] bg-gray-900 rounded-r-sm"></div>
                         </div>
                       </div>
-
-                      <button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3.5 rounded-lg font-medium shadow-md hover:shadow-lg transition-all">
-                        ✓ I'll Attend
-                      </button>
-
-                      <div className="flex gap-2">
-                        <button className="flex-1 px-4 py-2 border-2 border-gray-200 text-gray-700 rounded-lg text-sm hover:border-blue-300 transition-all">
-                          + Guests
-                        </button>
-                        <button className="flex-1 px-4 py-2 border-2 border-gray-200 text-gray-700 rounded-lg text-sm hover:border-blue-300 transition-all">
-                          View Map
-                        </button>
-                      </div>
-
-                      <p className="text-xs text-center text-gray-500">
-                        Please RSVP by June 1, 2026
-                      </p>
                     </div>
+
+                    {/* Phone Content */}
+                    <div className="relative bg-gradient-to-br from-blue-50 to-purple-50" style={{ height: '580px' }}>
+                      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white/80"></div>
+                      <img
+                        src="/image/2.png"
+                        alt="Corporate Event"
+                        className="w-full h-36 object-cover"
+                      />
+
+                      <div className="relative p-5 space-y-4">
+                        <div className="text-center space-y-2">
+                          <div className="inline-block px-3 py-1 bg-blue-100 rounded-full text-xs font-medium text-blue-700 mb-2">
+                            Wedding Event
+                          </div>
+                          <h3 className="text-2xl text-gray-900 font-semibold">Bride & Groom</h3>
+                          <p className="text-gray-600 text-sm">You're invited to our celebration</p>
+                        </div>
+
+                        <div className="bg-white rounded-xl p-4 space-y-3 shadow-lg border border-gray-100">
+                          <div className="flex items-start gap-3">
+                            <div className="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0">
+                              <span className="text-blue-600">📅</span>
+                            </div>
+                            <div>
+                              <p className="font-medium text-gray-900 text-sm">Friday, June 15, 2026</p>
+                              <p className="text-xs text-gray-600">6:00 PM - 10:00 PM</p>
+                            </div>
+                          </div>
+                          <div className="flex items-start gap-3">
+                            <div className="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0">
+                              <span className="text-blue-600">📍</span>
+                            </div>
+                            <div>
+                              <p className="font-medium text-gray-900 text-sm">Grand Ballroom</p>
+                              <p className="text-xs text-gray-600">Downtown Convention Center</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3.5 rounded-lg font-medium shadow-md hover:shadow-lg transition-all text-sm">
+                          ✓ I'll Attend
+                        </button>
+
+                        <div className="flex gap-2">
+                          <button className="flex-1 px-4 py-2 border-2 border-gray-200 text-gray-700 rounded-lg text-sm hover:border-blue-300 transition-all">
+                            + Guests
+                          </button>
+                          <button className="flex-1 px-4 py-2 border-2 border-gray-200 text-gray-700 rounded-lg text-sm hover:border-blue-300 transition-all">
+                            View Map
+                          </button>
+                        </div>
+
+                        <p className="text-xs text-center text-gray-500">Please RSVP by June 1, 2026</p>
+                      </div>
+
+                      {/* Home Indicator */}
+                      <div className="absolute bottom-2 left-1/2 -translate-x-1/2 w-28 h-1 bg-gray-800 rounded-full opacity-30"></div>
+                    </div>
+
                   </div>
                 </div>
               </div>
 
-              {/* Decorative Elements around phone */}
+              {/* Glow effects */}
               <div className="absolute -z-10 top-0 right-0 w-32 h-32 bg-purple-300/30 rounded-full blur-2xl"></div>
               <div className="absolute -z-10 bottom-0 left-0 w-40 h-40 bg-blue-300/30 rounded-full blur-2xl"></div>
             </div>
