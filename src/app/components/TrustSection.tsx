@@ -31,7 +31,7 @@ export function TrustSection() {
   const stats = [
     { number: "1,200+", label: "Events hosted" },
     { number: "94%", label: "Avg. response rate" },
-    { number: "24hr", label: "Delivery time" },
+    { number: "3 Day", label: "Delivery time" },
     { number: "4.9/5", label: "Customer rating" }
   ];
 
