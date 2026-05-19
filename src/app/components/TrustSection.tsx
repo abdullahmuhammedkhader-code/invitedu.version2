@@ -89,24 +89,7 @@ export function TrustSection() {
         {/* Trust badges */}
         <div className="text-center max-w-2xl mx-auto">
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
-            <div className="flex flex-wrap items-center justify-center gap-8 mb-6">
-              <div className="flex items-center gap-2">
-                <span className="text-green-400 text-2xl">✓</span>
-                <span className="text-sm text-gray-300">SSL Encrypted</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-green-400 text-2xl">✓</span>
-                <span className="text-sm text-gray-300">GDPR Compliant</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-green-400 text-2xl">✓</span>
-                <span className="text-sm text-gray-300">ISO 27001</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-green-400 text-2xl">✓</span>
-                <span className="text-sm text-gray-300">SOC 2 Type II</span>
-              </div>
-            </div>
+            
             <p className="text-gray-400 text-sm">
               Your data is secure with enterprise-grade security and compliance
             </p>
